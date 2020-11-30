@@ -7,7 +7,12 @@ const globalNames = ['teste1', 'teste2'];
  * um com usuarios filtrados
  * segudno com estatisticas
  */
-
+async function requestAPI() {
+  const resourse = await fetch('https://randomuser.me/api/?seed=javascript&results=100&nat=BR&noinfo');
+  const dataObj = await resourse.json();
+  const dataArr = dataObj.results;
+  console.log(dataArr);
+}
 
 /**
  * When the page loads
