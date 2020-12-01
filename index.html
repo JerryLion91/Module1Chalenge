@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Names Filter</title>
+    <title>Filter Names</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <h1 class="center">Pesquisa de usuários</h1>
@@ -16,17 +16,17 @@
           Busca:
           <input type="text" name="" id="inputName">
         </label>
-        <button id="searchButton">Buscar</button>
+        <button id="searchButton" disabled>Buscar</button>
       </form>
     </div>
     <div id="displayResults" class="container">
       <div class="container">
-        <h2>Resultado da Busca</h2>
-        <div id="results"></div>
+        <h2 id="resultsTitle">Nenhum usuário filtrado</h2>
+        <div id="tabResults"></div>
       </div>
       <div class="container">
         <h2>Estatísticas</h2>
-        <div id="statistics"></div>
+        <div id="tabStatistics"></div>
       </div>
     </div>
   <!-- Compiled and minified JavaScript -->
