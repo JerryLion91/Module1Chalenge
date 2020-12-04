@@ -79,7 +79,8 @@ function activateInput() {
 
 
 function handleSearch() {
-  resultsArr = allNames.filter(user => user.name.toLowerCase().includes(inputName.value.toLowerCase()));
+  resultsArr = allNames.filter(user => 
+    user.name.toLowerCase().includes(inputName.value.toLowerCase()));
   renderNames();
   renderSummary();
 }
